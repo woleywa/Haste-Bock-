@@ -32,6 +32,12 @@ oder `cloudflared tunnel --url http://localhost:3000`.
 `demo/api-demo.js` (gleiche Regeln, Daten im Browser des Besuchers). Damit lässt sich die UX auf jedem Handy
 testen, ohne etwas zu installieren. Jede:r Besucher:in hat dabei eine eigene Demo-Welt.
 
+### Web-Demo auf GitHub Pages
+
+Der Workflow `.github/workflows/pages.yml` baut bei jedem Push auf `main` die Demo (`dist/site/`) und
+veröffentlicht sie auf GitHub Pages. Einmalig nötig: **Settings → Pages → Source: „GitHub Actions“**.
+Bei einem kostenlosen GitHub-Account muss das Repo dafür öffentlich sein.
+
 ## Development
 
 | Befehl | Zweck |
